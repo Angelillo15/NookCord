@@ -1,0 +1,251 @@
+From a453ecf3ea09876da8f3ec7a7882524608dea63f Mon Sep 17 00:00:00 2001
+From: Angelillo15 <contact@angelillo15.es>
+Date: Tue, 27 Jun 2023 01:46:24 +0200
+Subject: [PATCH] Change modules name
+
+
+diff --git a/api/pom.xml b/api/pom.xml
+index c1292b63..24fe1e7c 100644
+--- a/api/pom.xml
++++ b/api/pom.xml
+@@ -15,7 +15,7 @@
+     <version>1.20-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-API</name>
++    <name>NookCord-API</name>
+     <description>API implemented by the Elastic Portal Suite</description>
+ 
+     <dependencies>
+diff --git a/bootstrap/pom.xml b/bootstrap/pom.xml
+index 4763d68a..bac4d407 100644
+--- a/bootstrap/pom.xml
++++ b/bootstrap/pom.xml
+@@ -15,8 +15,8 @@
+     <version>1.20-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Bootstrap</name>
+-    <description>Java 1.6 loader for Waterfall</description>
++    <name>NookCord-Bootstrap</name>
++    <description>Java 1.6 loader for NookCord</description>
+ 
+     <properties>
+         <maven.deploy.skip>true</maven.deploy.skip>
+@@ -37,7 +37,7 @@
+     </dependencies>
+ 
+     <build>
+-        <finalName>Waterfall</finalName>
++        <finalName>NookCord</finalName>
+         <plugins>
+             <plugin>
+                 <groupId>org.apache.maven.plugins</groupId>
+diff --git a/chat/pom.xml b/chat/pom.xml
+index 6dca791a..ea329294 100644
+--- a/chat/pom.xml
++++ b/chat/pom.xml
+@@ -15,8 +15,8 @@
+     <version>1.20-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Chat</name>
+-    <description>Minecraft JSON chat API intended for use with Waterfall</description>
++    <name>NookCord-Chat</name>
++    <description>Minecraft JSON chat API intended for use with NookCord</description>
+ 
+     <dependencies>
+         <dependency>
+diff --git a/config/pom.xml b/config/pom.xml
+index d80f9c2a..dcee4618 100644
+--- a/config/pom.xml
++++ b/config/pom.xml
+@@ -15,8 +15,8 @@
+     <version>1.20-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Config</name>
+-    <description>Generic java configuration API intended for use with Waterfall</description>
++    <name>NookCord-Config</name>
++    <description>Generic java configuration API intended for use with NookCord</description>
+ 
+     <dependencies>
+         <dependency>
+diff --git a/event/pom.xml b/event/pom.xml
+index c617ede3..330b938d 100644
+--- a/event/pom.xml
++++ b/event/pom.xml
+@@ -15,6 +15,6 @@
+     <version>1.20-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Event</name>
+-    <description>Generic java event dispatching API intended for use with Waterfall.</description>
++    <name>NookCord-Event</name>
++    <description>Generic java event dispatching API intended for use with NookCord.</description>
+ </project>
+diff --git a/log/pom.xml b/log/pom.xml
+index 166755aa..fb851dae 100644
+--- a/log/pom.xml
++++ b/log/pom.xml
+@@ -15,8 +15,8 @@
+     <version>1.20-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Log</name>
+-    <description>Simplistic and performant java.util.Logger based logger and console API designed for use with Waterfall and Minecraft related applications.</description>
++    <name>NookCord-Log</name>
++    <description>Simplistic and performant java.util.Logger based logger and console API designed for use with NookCord and Minecraft related applications.</description>
+ 
+     <dependencies>
+         <dependency>
+diff --git a/log4j/pom.xml b/log4j/pom.xml
+index 2b007cf1..73032777 100644
+--- a/log4j/pom.xml
++++ b/log4j/pom.xml
+@@ -14,8 +14,8 @@
+     <version>1.20-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Log4J</name>
+-    <description>Simplistic and performant Log4j2 based logger and console API designed for use with Waterfall and Minecraft related applications.</description>
++    <name>NookCord-Log4J</name>
++    <description>Simplistic and performant Log4j2 based logger and console API designed for use with NookCord and Minecraft related applications.</description>
+ 
+     <properties>
+         <log4j2.version>2.20.0</log4j2.version>
+diff --git a/module/pom.xml b/module/pom.xml
+index 9cd2952c..91837690 100644
+--- a/module/pom.xml
++++ b/module/pom.xml
+@@ -15,8 +15,8 @@
+     <version>1.20-R0.1-SNAPSHOT</version>
+     <packaging>pom</packaging>
+ 
+-    <name>Waterfall Modules</name>
+-    <description>Parent project for all Waterfall modules.</description>
++    <name>NookCord Modules</name>
++    <description>Parent project for all NookCord modules.</description>
+ 
+     <modules>
+         <module>cmd-alert</module>
+@@ -29,7 +29,7 @@
+     </modules>
+ 
+     <properties>
+-        <module.author>WaterfallMC</module.author>
++        <module.author>NookCord</module.author>
+         <maven.deploy.skip>true</maven.deploy.skip>
+         <maven.javadoc.skip>true</maven.javadoc.skip>
+     </properties>
+diff --git a/native/pom.xml b/native/pom.xml
+index a0fba402..f6a3b044 100644
+--- a/native/pom.xml
++++ b/native/pom.xml
+@@ -15,8 +15,8 @@
+     <version>1.20-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Native</name>
+-    <description>Optional native code to speed up and enhance Waterfall functionality.</description>
++    <name>NookCord-Native</name>
++    <description>Optional native code to speed up and enhance NookCord functionality.</description>
+ 
+     <dependencies>
+         <dependency>
+diff --git a/pom.xml b/pom.xml
+index fa15d00d..8e47aa14 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -15,13 +15,13 @@
+     <version>1.20-R0.1-SNAPSHOT</version>
+     <packaging>pom</packaging>
+ 
+-    <name>Waterfall-Parent</name>
+-    <description>Parent project for all Waterfall modules.</description>
+-    <url>https://github.com/WaterfallMC/Waterfall</url>
++    <name>NookCord-Parent</name>
++    <description>Parent project for all NookCord modules.</description>
++    <url>https://github.com/NookCord/NookCord</url>
+     <inceptionYear>2015</inceptionYear>
+     <organization>
+-        <name>WaterfallMC</name>
+-        <url>https://github.com/WaterfallMC</url>
++        <name>NookCord</name>
++        <url>https://github.com/Nookure/NookCord</url>
+     </organization>
+     <licenses>
+         <license>
+@@ -66,13 +66,13 @@
+     </modules>
+ 
+     <scm>
+-        <connection>scm:git:git@github.com:com:WaterfallMC/Waterfall.git</connection>
+-        <developerConnection>scm:git:git@github.com:WaterfallMC/Waterfall.git</developerConnection>
+-        <url>git@github.com:WaterfallMC/Waterfall.git</url>
++        <connection>scm:git:git@github.com:com:NookCordMC/NookCord.git</connection>
++        <developerConnection>scm:git:git@github.com:NookCordMC/NookCord.git</developerConnection>
++        <url>git@github.com:NookCord/NookCord.git</url>
+     </scm>
+     <issueManagement>
+         <system>GitHub</system>
+-        <url>https://github.com/PaperMC/Waterfall/issues</url>
++        <url>https://github.com/PaperMC/NookCord/issues</url>
+     </issueManagement>
+ 
+     <distributionManagement>
+@@ -360,7 +360,7 @@
+                                     <!-- lombok does not add @return or @param which causes warnings, so ignore -->
+                                     <doclint>none</doclint>
+                                     <sourcepath>${project.build.directory}/delombok</sourcepath>
+-                                    <additionalJOption>--no-module-directories</additionalJOption> <!-- Waterfall -->
++                                    <additionalJOption>--no-module-directories</additionalJOption> <!-- NookCord -->
+                                 </configuration>
+                             </execution>
+                         </executions>
+diff --git a/protocol/pom.xml b/protocol/pom.xml
+index 431a2722..68827c26 100644
+--- a/protocol/pom.xml
++++ b/protocol/pom.xml
+@@ -15,8 +15,8 @@
+     <version>1.20-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Protocol</name>
+-    <description>Minimal implementation of the Minecraft protocol for use in Waterfall</description>
++    <name>NookCord-Protocol</name>
++    <description>Minimal implementation of the Minecraft protocol for use in NookCord</description>
+ 
+     <!-- We really shouldn't depend on external repositories, but at least this is the Central staging one -->
+     <repositories>
+diff --git a/proxy/pom.xml b/proxy/pom.xml
+index 435f343c..33d81e32 100644
+--- a/proxy/pom.xml
++++ b/proxy/pom.xml
+@@ -15,7 +15,7 @@
+     <version>1.20-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Proxy</name>
++    <name>NookCord-Proxy</name>
+     <description>Proxy component of the Elastic Portal Suite</description>
+ 
+     <properties>
+diff --git a/query/pom.xml b/query/pom.xml
+index ba2a2924..facf1800 100644
+--- a/query/pom.xml
++++ b/query/pom.xml
+@@ -15,8 +15,8 @@
+     <version>1.20-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Query</name>
+-    <description>Minecraft query implementation based on the Waterfall API.</description>
++    <name>NookCord-Query</name>
++    <description>Minecraft query implementation based on the NookCord API.</description>
+ 
+     <dependencies>
+         <dependency>
+-- 
+2.34.1
+

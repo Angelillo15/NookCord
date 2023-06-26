@@ -16,12 +16,19 @@
     <file url="file://$PROJECT_DIR$/NookCord-Proxy/log4j/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/NookCord-Proxy/log4j/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/NookCord-Proxy/module/cmd-alert/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NookCord-Proxy/module/cmd-alert/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/NookCord-Proxy/module/cmd-find/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NookCord-Proxy/module/cmd-find/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/NookCord-Proxy/module/cmd-kick/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NookCord-Proxy/module/cmd-kick/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/NookCord-Proxy/module/cmd-list/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NookCord-Proxy/module/cmd-list/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/NookCord-Proxy/module/cmd-send/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NookCord-Proxy/module/cmd-send/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/NookCord-Proxy/module/cmd-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NookCord-Proxy/module/cmd-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/NookCord-Proxy/module/reconnect-yaml/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NookCord-Proxy/module/reconnect-yaml/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/NookCord-Proxy/module/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/NookCord-Proxy/module/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/NookCord-Proxy/native/src/main/java" charset="UTF-8" />
