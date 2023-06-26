@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="waterfall-chat" />
+        <module name="waterfall-module-cmd-alert" />
+        <module name="waterfall-bootstrap" />
+        <module name="waterfall-event" />
+        <module name="bungeecord-module-reconnect-yaml" />
+        <module name="waterfall-log4j" />
+        <module name="waterfall-module-cmd-send" />
+        <module name="waterfall-module-cmd-server" />
+        <module name="waterfall-api" />
+        <module name="waterfall-module-cmd-list" />
+        <module name="waterfall-query" />
+        <module name="waterfall-protocol" />
+        <module name="waterfall-module-cmd-find" />
+        <module name="waterfall-module-cmd-kick" />
+        <module name="waterfall-config" />
+        <module name="waterfall-native" />
+        <module name="waterfall-proxy" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="nookcord-api" target="1.5" />
+      <module name="nookcord-bootstrap" target="1.8" />
+      <module name="nookcord-chat" target="1.5" />
+      <module name="nookcord-config" target="1.5" />
+      <module name="nookcord-event" target="1.5" />
+      <module name="nookcord-log4j" target="1.5" />
+      <module name="nookcord-module" target="1.5" />
+      <module name="nookcord-module-cmd-alert" target="1.5" />
+      <module name="nookcord-module-cmd-find" target="1.5" />
+      <module name="nookcord-module-cmd-kick" target="1.5" />
+      <module name="nookcord-module-cmd-list" target="1.5" />
+      <module name="nookcord-module-cmd-send" target="1.5" />
+      <module name="nookcord-module-cmd-server" target="1.5" />
+      <module name="nookcord-native" target="1.5" />
+      <module name="NookCord-parent" target="1.8" />
+      <module name="nookcord-protocol" target="1.5" />
+      <module name="nookcord-proxy" target="1.5" />
+      <module name="nookcord-query" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
