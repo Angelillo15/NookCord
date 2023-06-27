@@ -1,0 +1,52 @@
+From d01d2b8f995c6ac4aedcd3d1e974f69774cae2ac Mon Sep 17 00:00:00 2001
+From: Angelillo15 <contact@angelillo15.es>
+Date: Tue, 27 Jun 2023 10:30:56 +0200
+Subject: [PATCH] Logger impruvements
+
+
+diff --git a/proxy/src/main/java/es/angelillo15/nookcord/NookCord.java b/proxy/src/main/java/es/angelillo15/nookcord/NookCord.java
+index 6ee8aa9f..31460648 100644
+--- a/proxy/src/main/java/es/angelillo15/nookcord/NookCord.java
++++ b/proxy/src/main/java/es/angelillo15/nookcord/NookCord.java
+@@ -11,6 +11,7 @@ public class NookCord {
+     public void onEnable() {
+         logger.info("NookCord is starting...");
+         loadConfig();
++        logger.info("NookCord has started!");
+     }
+ 
+     public void loadConfig() {
+diff --git a/proxy/src/main/java/es/angelillo15/nookcord/config/Config.java b/proxy/src/main/java/es/angelillo15/nookcord/config/Config.java
+index 7274d415..af9c57db 100644
+--- a/proxy/src/main/java/es/angelillo15/nookcord/config/Config.java
++++ b/proxy/src/main/java/es/angelillo15/nookcord/config/Config.java
+@@ -64,7 +64,7 @@ public class Config {
+                 }
+             }
+         }
+-        BungeeCord.getInstance().getLogger().log(Level.WARNING, "[BotFilter] Failed to set config option: {0}: {1} | {2} ", new Object[]
++        BungeeCord.getInstance().getLogger().log(Level.WARNING, "[NookCord] Failed to set config option: {0}: {1} | {2} ", new Object[]
+                 {
+                         key, value, instance
+                 });
+@@ -80,7 +80,7 @@ public class Config {
+                 yml = ConfigurationProvider.getProvider(YamlConfiguration.class).load(reader);
+             }
+         } catch (IOException ex) {
+-            BungeeCord.getInstance().getLogger().log(Level.WARNING, "[BotFilter] Не могу загрузить конфиг ", ex);
++            BungeeCord.getInstance().getLogger().log(Level.WARNING, "[NookCord] cannot load ", ex);
+             return false;
+         }
+         set(yml, "");
+@@ -215,7 +215,7 @@ public class Config {
+             return field;
+         } catch (IllegalAccessException | NoSuchFieldException | SecurityException | NoSuchMethodException |
+                  InvocationTargetException e) {
+-            BungeeCord.getInstance().getLogger().log(Level.WARNING, "[BotFilter] Invalid config field: {0} for {1}", new Object[]
++            BungeeCord.getInstance().getLogger().log(Level.WARNING, "[NookCord] Invalid config field: {0} for {1}", new Object[]
+                     {
+                             String.join(".", split), toNodeName(instance.getClass().getSimpleName())
+                     });
+-- 
+2.34.1
+
