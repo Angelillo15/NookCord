@@ -1,0 +1,35 @@
+From 69defe5a3f0ccaad13c9bce6ef798f865f2bebde Mon Sep 17 00:00:00 2001
+From: Angelillo15 <contact@angelillo15.es>
+Date: Tue, 27 Jun 2023 10:23:18 +0200
+Subject: [PATCH] Added maven cache
+
+
+diff --git a/pom.xml b/pom.xml
+index 8e47aa14..4bcce308 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -236,6 +236,13 @@
+                 </executions>
+             </plugin>
+         </plugins>
++        <extensions>
++            <extension>
++                <groupId>org.apache.maven.extensions</groupId>
++                <artifactId>maven-build-cache-extension</artifactId>
++                <version>1.0.1</version>
++            </extension>
++        </extensions>
+     </build>
+ 
+     <profiles>
+diff --git a/proxy/src/main/java/es/angelillo15/nookcord/config/Settings.java b/proxy/src/main/java/es/angelillo15/nookcord/config/Settings.java
+new file mode 100644
+index 00000000..4642b171
+--- /dev/null
++++ b/proxy/src/main/java/es/angelillo15/nookcord/config/Settings.java
+@@ -0,0 +1,2 @@
++package es.angelillo15.nookcord.config;public class Settings {
++}
+-- 
+2.34.1
+

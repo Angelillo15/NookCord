@@ -1,0 +1,67 @@
+From 94782fe89d25ec9745c774fdc007ea0fdacd6584 Mon Sep 17 00:00:00 2001
+From: Angelillo15 <contact@angelillo15.es>
+Date: Tue, 27 Jun 2023 10:23:37 +0200
+Subject: [PATCH] Added NookCord settings
+
+
+diff --git a/proxy/src/main/java/es/angelillo15/nookcord/NookCord.java b/proxy/src/main/java/es/angelillo15/nookcord/NookCord.java
+index 2f028239..6ee8aa9f 100644
+--- a/proxy/src/main/java/es/angelillo15/nookcord/NookCord.java
++++ b/proxy/src/main/java/es/angelillo15/nookcord/NookCord.java
+@@ -1,9 +1,20 @@
+ package es.angelillo15.nookcord;
+ 
++import es.angelillo15.nookcord.config.Settings;
++
++import java.io.File;
++import java.util.logging.Logger;
++
+ public class NookCord {
++    private static final Logger logger = Logger.getLogger("NookCord");
+ 
+     public void onEnable() {
++        logger.info("NookCord is starting...");
++        loadConfig();
++    }
+ 
++    public void loadConfig() {
++        Settings.instance.reload(new File("NookCord", "config.yml"));
+     }
+ 
+     public void shutdown() {
+diff --git a/proxy/src/main/java/es/angelillo15/nookcord/config/Settings.java b/proxy/src/main/java/es/angelillo15/nookcord/config/Settings.java
+index 4642b171..e100bc92 100644
+--- a/proxy/src/main/java/es/angelillo15/nookcord/config/Settings.java
++++ b/proxy/src/main/java/es/angelillo15/nookcord/config/Settings.java
+@@ -1,2 +1,27 @@
+-package es.angelillo15.nookcord.config;public class Settings {
++package es.angelillo15.nookcord.config;
++
++import java.io.File;
++
++public class Settings extends Config {
++    @Ignore
++    public static final Settings instance = new Settings();
++
++    @Create
++    public Modules Modules;
++
++    @Comment("NookCord's Modules config")
++    public static class Modules {
++        @Comment("Enable/Disable the AntiBot module")
++        public boolean antibot = true;
++        @Comment("Enable/Disable the motd module")
++        public boolean motd = true;
++        @Comment("Enable/Disable the f3name module")
++        public boolean f3name = true;
++    }
++
++    public void reload(File file) {
++        load(file);
++        save(file);
++    }
++
+ }
+-- 
+2.34.1
+
